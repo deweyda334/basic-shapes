@@ -1,5 +1,3 @@
-# Pygame game template
-
 import pygame
 import sys
 import config # Import the config module
@@ -73,3 +71,4 @@ def main():
 
 if __name__== "__main__":
     main()
+
