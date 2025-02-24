@@ -28,6 +28,7 @@ def main():
         running = handle_events()
         screen.fill(config.WHITE) # Use color from config
 
+        pygame.draw.rect(screen,(255,0,0), (200, 100, 150, 150))
 
 
 
@@ -38,7 +39,6 @@ def main():
 
 
 
-        
         
         
         
