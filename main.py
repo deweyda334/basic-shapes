@@ -21,9 +21,9 @@ def handle_events ():
 # Write a function under this comment that lets you draw one or more rectangles
 # on your Pygame window
 
-def draw_rectangle(screen, rect, color, thickness):
+def draw_rectangle(screen, rect_info, color, thickness):
     '''Draws a rectangle in the Pygame window.'''
-    pygame.draw.rect(screen, rect, color, thickness)
+    pygame.draw.rect(screen, rect_info, color, thickness)
 
 
 
