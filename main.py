@@ -44,7 +44,8 @@ def main():
 
         # Give Python some info about what we want the rectangle to look like
        
-        thickness = 4
+        thickness = 0
+
         draw_rectangle(screen, config.GREEN, [250, 85, 350, 200], thickness)
     
 
