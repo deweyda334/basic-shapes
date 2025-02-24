@@ -19,6 +19,20 @@ def handle_events ():
                 return False
     return True
 
+
+# Write a function under this comment that lets you draw one or more rectangles
+# on your Pygame window
+
+def draw_rectangle(screen, rect, color, thickness):
+    '''Draws a rectangle in the Pygame window.'''
+    pygame.draw.rect(screen, rect, color, thickness)
+
+
+
+
+
+
+
 def main():
     screen = init_game()
     clock = pygame.time.Clock() # Initialize the clock here
@@ -28,9 +42,13 @@ def main():
         running = handle_events()
         screen.fill(config.WHITE) # Use color from config
 
-        pygame.draw.rect(screen,(255,0,0), (200, 100, 150, 150))
 
 
+        # Give Python some info about what we want the rectangle to look like
+        rect1 = [250, 85, 350, 200]
+        thickness = 4
+        draw_rectangle(screen, rect1, config.GREEN, thickness)
+    
 
 
 
