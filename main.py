@@ -8,7 +8,7 @@ def init_game():
     pygame.display.set_caption(config.TITLE)
     return screen
 
-def handle_events ():
+def handle_events():
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             return False
@@ -43,9 +43,9 @@ def main():
 
 
         # Give Python some info about what we want the rectangle to look like
-        rect1 = [250, 85, 350, 200]
+       
         thickness = 4
-        draw_rectangle(screen, rect1, config.GREEN, thickness)
+        draw_rectangle(screen, [250, 85, 350, 200], config.GREEN, thickness)
     
 
 
